@@ -13,7 +13,62 @@ p {
 
 #game-area {
 	width: 300px;
-	height: 300px;
+	height: 30body {
+	background: linear-gradient(to right, #ADD8E6 50%, white 50%);
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+#game-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px auto;
+	width: 400px;
+	height: 400px;
+}
+
+.square {
+	width: 80px;
+	height: 80px;
+	background-color: #4CAF50;
+	margin: 5px;
+	display: none;
+	border-radius: 10px;
+}
+
+#start-btn {
+	display: block;
+	margin: 20px auto;
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#start-btn:disabled {
+	background-color: #aaa;
+	cursor: default;
+}
+
+#result {
+	text-align: center;
+	font-size: 24px;
+	margin-top: 30px;
+}
+0px;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
