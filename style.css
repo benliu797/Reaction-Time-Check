@@ -11,22 +11,34 @@ p {
 	margin-bottom: 30px;
 }
 
-#start-button {
-	display: block;
+#game-area {
+	width: 300px;
+	height: 300px;
 	margin: 0 auto;
-	font-size: 18px;
-	padding: 10px 20px;
-	border: none;
-	background-color: #4CAF50;
-	color: white;
-	cursor: pointer;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
-#test-area {
-	width: 100px;
-	height: 100px;
-	background-color: red;
-	margin: 0 auto;
-	margin-top: 50px;
-	display: none;
+.square {
+	width: 60px;
+	height: 60px;
+	background-color: #4CAF50;
+	margin: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	animation: square-animation 1s infinite;
+}
+
+@keyframes square-animation {
+	0% {
+		background-color: #4CAF50;
+	}
+	50% {
+		background-color: #fff;
+	}
+	100% {
+		background-color: #4CAF50;
+	}
 }
